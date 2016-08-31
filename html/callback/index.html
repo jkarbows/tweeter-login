@@ -145,7 +145,7 @@ footer {
     
     <script>
       $(function() {
-        var separator = '%20';
+        var separator = 'ILOVEYOU';
         var redirectURL = 'https://pitangui.amazon.com/spa/skill/account-linking-status.html?vendorId=M30ZYAJQY0QZYX';
         $.get('https://tweeter-login.herokuapp.com/access-token' + location.search).done(function(data) {
           window.location.href = redirectURL + '#state=' + data.state + '&access_token=' + data.token + separator + data.secret + '&token_type=Bearer';
